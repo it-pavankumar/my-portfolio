@@ -19,7 +19,7 @@
         color: $myColor;
     }
     ul {
-        margin-top: 30%;
+        margin-top: 20%;
         list-style: none;
         display: flex;
         align-items: center;
@@ -31,3 +31,26 @@
         }
     }
 } 
+
+@media only screen and (max-width: 410px) {
+    .contact{
+        width: 100%;
+        padding: 16px;
+        h2 {
+            padding: 16px 0 16px 8px;
+        }
+        ol{
+            font-size: 14px;
+            padding-left: 16px;
+            li {
+                padding: 5px;
+            }
+        }
+        ul {
+            margin: 45px auto;
+            li img { width: 20px;}
+            gap: 10px;
+            padding-left: 16px;
+        }
+    } 
+}

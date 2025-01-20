@@ -56,6 +56,22 @@
 }
 
 
-@media screen and (max-width: 620px) {
-    
+@media screen and (max-width: 410px) {
+    .main {
+        header {
+            nav.nav-custom {
+                background-color: red !important;
+            }
+            ul {
+                flex-direction: column;
+                li {
+                    padding: 0px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
 }

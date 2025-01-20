@@ -42,3 +42,22 @@
         }
     }
 }
+
+@media only screen and (max-width: 410px) {
+    .experiences{
+        width: 100%;
+        padding: 16px;
+        .expr-list {
+            padding-left: 8px;
+            .exp-item {
+                padding: 34px 0 0 16px !important;
+                .inner-list {
+                    ul { padding-left: 16px;}
+                    h5::before {
+                        left: -22px;
+                    }
+                }
+            }
+        }
+    }
+}

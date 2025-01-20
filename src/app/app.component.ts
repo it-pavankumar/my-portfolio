@@ -18,9 +18,13 @@ export class AppComponent {
   isScrolled:boolean = false;
 
   @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    const scrollTop = window.scrollY | document.documentElement.scrollTop;
-    this.isScrolled = scrollTop > 50; 
+    onWindowScroll(): void {
+      const scrollTop = window.scrollY | document.documentElement.scrollTop;
+      this.isScrolled = scrollTop > 50; 
   }
-  
+
+  scrollTo(sectionId: string): void {
+    const ele = document.getElementById(sectionId);
+    ele && ele.scrollIntoView({ behavior: 'smooth' })
+  }
 }

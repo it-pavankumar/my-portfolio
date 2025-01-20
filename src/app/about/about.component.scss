@@ -45,11 +45,42 @@
                     font-weight: 600;
                     border-radius: 6px;
                     font-size: 14px;
+                    height: 45px;
                 }
             }
         }
     }
     .wrap {
         text-wrap: pretty;
+    }
+}
+
+
+@media only screen and (max-width: 410px) {
+    .about-sec {
+        flex-direction: column;
+        width: 100%;
+        padding: 30% 0 16px;
+        .profile-img{
+            img {margin-left: -10px;}
+            &::before {
+                left: 20px;
+            }
+        }
+        .info-sec {
+            width: 100%;
+            padding: 16px;
+            ol {
+                padding-left: 0;
+                display: flex;
+                justify-content: center;
+                .butn-sec {
+                    width: 80%;
+                    button {
+                        height: 45px;
+                    }
+                }
+            }
+        }
     }
 }
