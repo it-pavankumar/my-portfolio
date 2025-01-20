@@ -1,0 +1,33 @@
+@use "../../styles/rules" as *;
+
+.contact {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding: 100px 0;
+    h2 {padding-bottom: 32px;}
+    ol {
+        font-size: 20px;
+        list-style: none;
+        li span.bold { font-weight: 600;}
+        li {
+            padding-bottom: 14px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $myColor;
+    }
+    ul {
+        margin-top: 30%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        gap: 40px;
+        li img { 
+            width: 45px;
+            opacity: 0.5;
+        }
+    }
+} 

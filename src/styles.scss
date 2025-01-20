@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@use './styles/rules' as *;
+
+html {
+    scroll-behavior: smooth;
+    body {
+        height: 100%;
+        overflow-x: hidden;
+        font-size: 15px;
+    }
+}
+body { margin: 0;
+    font-family: 'Quicksand',sans-serif;
+}
+
+.divider {
+    border-top: 1px solid $myColor;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0.4;
+}

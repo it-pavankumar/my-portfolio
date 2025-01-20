@@ -1,0 +1,38 @@
+<span id="about-sec"></span>
+<div class="about-sec">
+    <div class="profile-img">
+        <img src="assets/pic1.jpeg" alt="profile pic">
+    </div>
+    <div class="info-sec">
+            <h2> Isnagarapu Naga Pavan Kumar</h2>
+            <p class="position"> Sr. Front end developer</p>
+            <p class="wrap"> A competent and dynamic Software Engineer with over 8 years of experience in front -end web application development,
+                specializing in Angular 12+, TypeScript, JavaScript, and jQuery.
+            </p>
+            <p class="wrap">
+                Experienced in agile methodologies, leading design, coding, testing, and task automation in collaboration with the Agile
+                development team.
+            </p>
+            <ol>
+                <div class="butn-sec">
+                    <button (click)="setPath('cv')" data-bs-toggle="modal" data-bs-target="#staticCVpopup"> Download CV </button>
+                    <button (click)="setPath('cl')"  data-bs-toggle="modal" data-bs-target="#staticCVpopup"> Download Cover Letter </button>
+                </div>
+            </ol>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticCVpopup" tabindex="-1" aria-labelledby="openCVpopup" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="openCVpopup">CV View</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-modal></app-modal>
+      </div>
+    </div>
+  </div>
+</div>

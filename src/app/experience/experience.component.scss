@@ -1,0 +1,44 @@
+@use "../../styles/rules" as *;
+
+.experiences {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding: 100px 0;
+    .expr-list {
+        list-style: none;
+        .exp-item {
+            border-left: 2px solid $myColor;
+            padding:34px 0 0 34px;
+            .inner-list {
+                h5{
+                    position: relative;
+                    color: $myColor;
+                    &::before {
+                        content: "";
+                        background-color: $myColor;
+                        position: absolute;
+                        top: 8px;
+                        height: 10px;
+                        width: 10px;
+                        left: -40px;
+                        border-radius: 1px;
+                    }
+                }
+                p span.bold {font-weight: 500;}
+                ul li {    text-align: justify; }
+            }
+            p.company{
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            span.special {
+                position: relative;
+                color: $myColor;
+            }
+        }
+        h2.mid-head {
+            margin-top: 34px;
+        }
+    }
+}

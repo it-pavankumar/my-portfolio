@@ -1,0 +1,78 @@
+@use "../../styles/rules" as *;
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+    main {
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        h1 {
+            margin: 14px 0;
+            span { color: $myColor; font-weight: 600;}
+        }
+        p { padding: 0; margin: 0; font-size: 18px;}
+        p.special { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 5px;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: $myColor;
+                border-radius: 4px;
+                opacity: 0.3;
+            }
+        }
+    }
+}
+.scroll-point {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    span.scroll {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin: 0 auto;
+        color: #0cbfc8;
+        margin-top: -85px;
+        position: absolute;
+        align-items: center;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        right: 0;
+        cursor: pointer;
+    }
+    &:hover + span.arrow{
+        position: absolute;
+        bottom: 16px;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $myColor;
+        font-weight: 600;
+    }
+}
+span.arrow {
+    cursor: pointer;
+    display: none;
+}
