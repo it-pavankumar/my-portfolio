@@ -58,9 +58,10 @@
 
 @media screen and (max-width: 575px) {
     .main {
+        background-position-x: right;
         header {
             nav.nav-custom {
-                background-color: red !important;
+                background-color: $myColor !important;
             }
             ul {
                 flex-direction: column;
