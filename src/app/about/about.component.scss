@@ -50,9 +50,6 @@
             }
         }
     }
-    .wrap {
-        text-wrap: pretty;
-    }
 }
 
 
@@ -70,6 +67,7 @@
         .info-sec {
             width: 100%;
             padding: 16px;
+            text-align: justify;
             ol {
                 padding-left: 0;
                 display: flex;
