@@ -18,8 +18,8 @@
         height: 360px;
         border: 5px solid $myColor;
         z-index: -1;
-        top: -21px;
-        left: 26px;
+        top: 24px;
+        left: 24px;
     }
     .info-sec {
         width: 450px;
@@ -60,9 +60,6 @@
         padding: 30% 0 16px;
         .profile-img{
             img {margin-left: -10px;}
-            &::before {
-                left: 20px;
-            }
         }
         .info-sec {
             width: 100%;

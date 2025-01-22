@@ -2,10 +2,7 @@
   <header>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top nav-custom" [class.scrolled]="isScrolled">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#test">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="test">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('home-section')">Home</a>
@@ -23,7 +20,29 @@
         </div>
       </div>
     </nav>
+    <div class="mob-menu" (click)="toggleMenu = !toggleMenu">
+      <hr />
+      <hr />
+      <hr />
+    </div>
   </header>
+  <div class="navbarNav" *ngIf="toggleMenu">
+    <span class="close" (click)="toggleMenu = !toggleMenu">X</span>
+    <ul class="navbar-nav mobile-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('home-section')">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('about-sec')">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('experience')">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('contact')">Contact</a>
+      </li>
+    </ul>
+  </div>
   <app-home></app-home>
 </div>
 

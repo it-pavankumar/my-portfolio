@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  scrollTo(sectionId: string): void {
+    const ele = document.getElementById(sectionId);
+    ele && ele.scrollIntoView({ behavior: 'smooth' })
+  }
+  
 }

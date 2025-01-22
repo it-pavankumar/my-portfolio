@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { ExperienceComponent } from "./experience/experience.component";
@@ -14,10 +14,11 @@ import { CommonModule } from '@angular/common';
 })
 
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'my-portfolio';
   isScrolled:boolean = false;
-  isNavbarCollapsed : boolean = false;
+  toggleMenu: boolean = false;
+
 
   @HostListener('window:scroll', [])
     onWindowScroll(): void {
@@ -30,9 +31,6 @@ export class AppComponent {
     ele && ele.scrollIntoView({ behavior: 'smooth' })
   }
 
-  toggleNavbar() {
-    this.isNavbarCollapsed = !this.isNavbarCollapsed;
-    console.log(this.isNavbarCollapsed);
-    
+  ngOnInit(): void {
   }
 }
