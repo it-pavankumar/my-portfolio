@@ -11,8 +11,8 @@ import { CommonServService } from '../common-serv.service';
 })
 export class AboutComponent {
 
-  cvPath: string = 'assets/CV_Naga Pavan Kumar_FE_DEV.pdf';
-  clPath: string = 'assets/CL_Naga Pavan Kumar_FE_Dev.pdf';
+  cvPath: string = 'assets/CV_Naga Pavan Kumar_FS_Dev.pdf';
+  clPath: string = 'assets/CL_Naga Pavan Kumar_FS_Dev.pdf';
 
   constructor(private _commonServ: CommonServService) {}
   
