@@ -28,3 +28,10 @@
 .reverse {
     flex-direction: row-reverse;
 }
+
+
+@media only screen and (max-width: 768px) { 
+    .testimonials .test-sec {
+        flex-direction: column;
+    }
+}
