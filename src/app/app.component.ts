@@ -4,13 +4,14 @@ import { AboutComponent } from "./about/about.component";
 import { ExperienceComponent } from "./experience/experience.component";
 import { ContactComponent } from "./contact/contact.component";
 import { CommonModule } from '@angular/common';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [HomeComponent, AboutComponent, ExperienceComponent, ContactComponent, CommonModule]
+  imports: [HomeComponent, AboutComponent, ExperienceComponent, TestimonialsComponent, ContactComponent, CommonModule]
 })
 
 
@@ -18,6 +19,14 @@ export class AppComponent implements OnInit {
   title = 'my-portfolio';
   isScrolled:boolean = false;
   toggleMenu: boolean = false;
+
+  contentObj = [ 
+    { scrollTo : 'home-section', text: 'Home'},
+    { scrollTo : 'about-sec', text: 'About'},
+    { scrollTo : 'experience', text: 'Experience'},
+    // { scrollTo : 'testimonials', text: 'Testimonials'},
+    { scrollTo : 'contact', text: 'Contact'},
+  ]
 
 
   @HostListener('window:scroll', [])

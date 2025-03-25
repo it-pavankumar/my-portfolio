@@ -1,0 +1,30 @@
+.testimonials {
+    width: 75%;
+    margin: 0 auto;
+    padding: 100px 0;
+    h2 {padding-bottom: 32px;}
+    .test-sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 80px;
+        img {
+            width: 200px;
+            border-radius: 50px
+        }
+        .text-sec { 
+            text-align: justify;
+            .title {
+                color: #0cbfc8;
+                font-weight: 600;
+            }
+            .quote {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.reverse {
+    flex-direction: row-reverse;
+}

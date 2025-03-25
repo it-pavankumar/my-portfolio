@@ -4,18 +4,11 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('home-section')">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('about-sec')">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('experience')">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('contact')">Contact</a>
-            </li>
+            <ng-container *ngFor="let item of contentObj">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)" (click)="scrollTo(item.scrollTo)">{{item.text}}</a>
+              </li>
+            </ng-container>
           </ul>
         </div>
       </div>
@@ -29,18 +22,11 @@
   <div class="navbarNav" *ngIf="toggleMenu">
     <span class="close" (click)="toggleMenu = !toggleMenu">X</span>
     <ul class="navbar-nav mobile-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('home-section')">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('about-sec')">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('experience')">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="javascript:void(0)" (click)="scrollTo('contact')">Contact</a>
-      </li>
+      <ng-container *ngFor="let item of contentObj">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" (click)="scrollTo(item.scrollTo)">{{item.text}}</a>
+        </li>
+      </ng-container>
     </ul>
   </div>
   <app-home></app-home>
@@ -49,5 +35,7 @@
 <app-about></app-about>
 
 <app-experience></app-experience>
+
+<!-- <app-testimonials></app-testimonials> -->
 
 <app-contact></app-contact>
