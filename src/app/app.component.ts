@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     { scrollTo : 'home-section', text: 'Home'},
     { scrollTo : 'about-sec', text: 'About'},
     { scrollTo : 'experience', text: 'Experience'},
-    // { scrollTo : 'testimonials', text: 'Testimonials'},
+    { scrollTo : 'testimonials', text: 'Testimonials'},
     { scrollTo : 'contact', text: 'Contact'},
   ]
 
